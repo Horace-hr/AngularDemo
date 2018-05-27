@@ -1,0 +1,37 @@
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">成员名称</th>
+        <th scope="col">真实姓名</th>
+        <th scope="col">邮箱</th>
+        <th scope="col">电话</th>
+        <th scope="col">角色</th>
+        <th scope="col">身份</th>
+        <th scope="col">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr *ngFor="let member of members" class="danger">
+        <td *ngIf="true">{{member.id}}</td>
+        <td *ngIf="true">{{member.name}}</td>
+        <td *ngIf="true">{{member.realname}}</td>
+        <td *ngIf="true">{{member.memberemail}}</td>
+        <td *ngIf="true">{{member.phonenumber}}</td>
+        <td *ngIf="true">{{member.character}}</td>
+        <td *ngIf="true">{{member.identify}}</td>
+        <td *ngIf="true"><button type="button" class="btn btn-link" (click)="updateMember(member)">修改</button><a href="#">删除</a></td>
+        <td *ngIf="false">{{member.id}}</td>
+        <td *ngIf="false">{{member.name}}</td>
+        <td *ngIf="fa、lse"><input type="text"></td>
+        <td *ngIf="false"><input type="text"></td>
+        <td *ngIf="false"><input type="text"></td>
+        <td *ngIf="false"><input type="text"></td>
+        <td *ngIf="false">{{member.identify}}</td>
+        <td *ngIf="false"><button type="button" class="btn btn-link" (click)="updateMember(this)">修改</button><a href="#">删除</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
